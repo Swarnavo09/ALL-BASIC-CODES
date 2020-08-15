@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter the data you want to enter\n");
+    scanf("%d",&n);
+    insert(n);
+    
+}
+void insert(int)
+{
+    struct node{
+        int data;
+        struct node *next;
+    };
+    struct node *head;
+}
+void insert(int n){
+    struct node *ptr = (struct node*)malloc(sizeof(struct node*));
+    if(ptr==Null){
+        printf("Stack Overflow");
+    }
+    else{
+        ptr->data = n;
+        ptr->next = head;
+        head = ptr;
+        printf("\nNode Inserted\n");
+    }
+}
+}
